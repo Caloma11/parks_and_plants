@@ -1,0 +1,12 @@
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <h1>Add a tag to <%= @plant.name %> </h1>
+      <%= simple_form_for [@plant, @plant_tag] do |f| %>
+        <%= f.association :tag, input_html: { multiple: true, class: "multiple-select" }, include_hidden: false %>
+        <%= f.submit "Add a tag", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

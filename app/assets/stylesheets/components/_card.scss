@@ -16,7 +16,7 @@
     color: red;
     position: absolute;
     top: 8px;
-    right: 8px;
+    right: 16px;
     text-decoration: none;
     &:hover {
       color: inherit;
@@ -24,3 +24,18 @@
   }
 }
 
+.card-tags {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 80%;
+  span {
+    background: $blue;
+    font-size: .7em;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+  a {
+    color: white;
+  }
+}
